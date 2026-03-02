@@ -1,16 +1,45 @@
 const HeroSection = () => {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'clamp(420px, 50vw, 520px)' }}>
-      {/* Background - banner.png */}
+    <section
+      className="relative flex items-center justify-center overflow-hidden w-full"
+      style={{ height: 'clamp(420px, 40vw, 480px)', maxHeight: '520px' }}
+    >
+      {/* Background - banner */}
       <div className="absolute inset-0">
         <img
           src="/banner.png"
           alt=""
           className="h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-background/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-background/10" />
+        {/* Dark cinematic overlay */}
+        <div className="absolute inset-0 bg-background/55" />
+        {/* Bottom fade to page */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+        {/* Top subtle fade */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-transparent" />
+        {/* Cinematic vignette */}
         <div className="absolute inset-0 vignette" />
+        {/* Gold rim volumetric light - left */}
+        <div
+          className="absolute inset-y-0 left-0 w-1/3"
+          style={{
+            background: 'radial-gradient(ellipse at left center, hsl(43, 72%, 55%, 0.06) 0%, transparent 70%)',
+          }}
+        />
+        {/* Gold rim volumetric light - right */}
+        <div
+          className="absolute inset-y-0 right-0 w-1/3"
+          style={{
+            background: 'radial-gradient(ellipse at right center, hsl(43, 72%, 55%, 0.06) 0%, transparent 70%)',
+          }}
+        />
+        {/* Center gold ambient */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'radial-gradient(ellipse at center 40%, hsl(43, 72%, 55%, 0.04) 0%, transparent 60%)',
+          }}
+        />
       </div>
 
       {/* Content */}
@@ -18,6 +47,9 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto">
           <h1
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] mb-5 opacity-0 animate-fade-in-up"
+            style={{
+              textShadow: '0 0 30px hsl(43, 72%, 55%, 0.2), 0 0 60px hsl(43, 72%, 55%, 0.08)',
+            }}
           >
             <span className="text-gold-gradient gold-text-glow block">YouTube AVOD</span>
             <span className="text-foreground block mt-2">Film Distribution</span>
@@ -55,7 +87,7 @@ const HeroSection = () => {
       </div>
 
       {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent z-20" />
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent z-20" />
     </section>
   );
 };
