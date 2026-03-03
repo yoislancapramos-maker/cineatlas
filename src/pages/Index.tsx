@@ -18,7 +18,7 @@ export default function Index() {
   return (
     <>
       {/* 🌐 Language Switch */}
-      <div className="fixed top-24 md:top-20 right-[26px] z-[99999]">
+      <div className="fixed top-16 md:top-20 right-[24px] z-[99999]">
         <div className="flex rounded-full border border-primary/40 bg-black/60 backdrop-blur-md shadow-lg overflow-hidden">
           <button
             onClick={() => setLang("en")}
