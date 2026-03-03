@@ -62,13 +62,13 @@ const HeroSection = () => {
   style={{
     animationDelay: "0.55s",
     maxWidth: "1100px",
-    height: "clamp(180px, 28vw, 220px)",
+    aspectRatio: "1100 / 260",
   }}
 >
             <img
               src="/banner.png"
               alt=""
-              className="h-full w-full object-cover object-center md:object-center object-[center_35%]"
+              className="h-full w-full object-contain md:object-cover object-center"
             />
 
             {/* overlays suaves */}
