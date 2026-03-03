@@ -56,18 +56,19 @@ const HeroSection = () => {
           </p>
 
           {/* ===== BANNER STRIP (NUEVO) ===== */}
-          <div
-            className="relative mx-auto mb-8 overflow-hidden rounded-sm opacity-0 animate-fade-in-up banner-gold-rim"
-            style={{
-              animationDelay: "0.55s",
-              maxWidth: "1100px",
-              height: "clamp(160px, 18vw, 200px)",
-            }}
-          >
+          
+<div
+  className="relative mx-auto mb-8 overflow-hidden rounded-sm opacity-0 animate-fade-in-up banner-gold-rim"
+  style={{
+    animationDelay: "0.55s",
+    maxWidth: "1100px",
+    height: "clamp(180px, 28vw, 220px)",
+  }}
+>
             <img
               src="/banner.png"
               alt=""
-              className="h-full w-full object-cover object-center"
+              className="h-full w-full object-cover object-center md:object-center object-[center_35%]"
             />
 
             {/* overlays suaves */}

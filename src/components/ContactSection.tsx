@@ -16,7 +16,10 @@ const handleSubmit = async (e: React.FormEvent) => {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      body: JSON.stringify(form),
+      body: JSON.stringify({
+  ...form,
+  _replyto: form.email,
+}),
     });
 
     if (res.ok) {
