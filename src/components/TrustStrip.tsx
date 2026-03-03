@@ -13,7 +13,7 @@ const TrustStrip = () => {
       <div className="absolute inset-0 bg-cinema-surface/50" />
       <div className="relative container mx-auto px-6 text-center">
         <p className="font-body text-xs tracking-[0.35em] uppercase text-muted-foreground mb-8">
-          Industry-Aligned AVOD Workflow
+          Industry-Aligned Rights & AVOD Workflow
         </p>
         <div className="flex flex-wrap justify-center gap-6 md:gap-12">
           {badges.map(({ icon: Icon, label }) => (
