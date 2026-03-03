@@ -1,38 +1,41 @@
 import { FileCheck, Handshake, BarChart3, TrendingUp } from "lucide-react";
-
-const steps = [
-  {
-    icon: FileCheck,
-    title: "Rights Review",
-    desc: "Thorough verification of content rights, territories, and licensing windows to ensure full compliance.",
-  },
-  {
-    icon: Handshake,
-    title: "Agreement Structure",
-    desc: "Transparent deal structuring with clear revenue splits, reporting cadence, and distribution terms.",
-  },
-  {
-    icon: BarChart3,
-    title: "AVOD Optimization",
-    desc: "Strategic placement, metadata optimization, and audience targeting across YouTube AVOD channels.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Monetization & Reporting",
-    desc: "Real-time revenue tracking with detailed analytics and periodic performance reporting.",
-  },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 const HowWeWork = () => {
+  const { t } = useLanguage();
+
+  const steps = [
+    {
+      icon: FileCheck,
+      title: t.step1Title,
+      desc: t.step1Desc,
+    },
+    {
+      icon: Handshake,
+      title: t.step2Title,
+      desc: t.step2Desc,
+    },
+    {
+      icon: BarChart3,
+      title: t.step3Title,
+      desc: t.step3Desc,
+    },
+    {
+      icon: TrendingUp,
+      title: t.step4Title,
+      desc: t.step4Desc,
+    },
+  ];
+
   return (
     <section id="how-we-work" className="py-24 md:py-32">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-5xl font-bold text-gold-gradient gold-text-glow mb-4">
-            How We Work
+            {t.howWeWorkTitle}
           </h2>
           <p className="font-body text-muted-foreground max-w-xl mx-auto">
-            A structured, rights-first approach to AVOD film distribution.
+            {t.howWeWorkSubtitle}
           </p>
         </div>
 

@@ -1,4 +1,8 @@
+import { useLanguage } from "@/context/LanguageContext";
+
 const AboutSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="about" className="py-24 md:py-28">
       <div className="container mx-auto px-6">
@@ -12,32 +16,18 @@ const AboutSection = () => {
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />
-              
             </div>
           </div>
 
           {/* Text */}
           <div>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-gold-gradient gold-text-glow mb-6">
-              About CineAtlas
+              {t.aboutTitle}
             </h2>
             <div className="space-y-5 font-body text-muted-foreground leading-relaxed">
-              <p>
-                CineAtlas operates as a professional YouTube AVOD distribution platform,
-                specializing in the monetization of licensed film content across global
-                territories.
-              </p>
-              <p>
-                Our infrastructure is built around rights compliance, distributor collaboration,
-                and revenue optimization — ensuring that every title in our catalog is
-                properly licensed, strategically positioned, and transparently reported.
-              </p>
-              <p>
-                We work exclusively with content licensors and distributors who share our
-                commitment to legitimate, rights-aware digital distribution. Every workflow
-                is designed to protect intellectual property while maximizing AVOD revenue
-                potential.
-              </p>
+              <p>{t.aboutP1}</p>
+              <p>{t.aboutP2}</p>
+              <p>{t.aboutP3}</p>
             </div>
           </div>
         </div>

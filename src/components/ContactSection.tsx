@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const ContactSection = () => {
+  const { t } = useLanguage();
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ company: "", email: "", details: "" });
 
@@ -38,10 +40,10 @@ const handleSubmit = async (e: React.FormEvent) => {
       <div className="container mx-auto px-6 max-w-[1000px]">
         <div className="text-center mb-2">
           <h2 className="font-display text-2xl md:text-4xl font-bold text-gold-gradient gold-text-glow mb-4">
-            Licensing Inquiries
+            {t.licensingTitle}
           </h2>
           <p className="font-body text-muted-foreground">
-            For distribution partnerships and content licensing opportunities.
+            {t.licensingSubtitle}
           </p>
         </div>
 
@@ -53,17 +55,18 @@ const handleSubmit = async (e: React.FormEvent) => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-display text-2xl text-foreground mb-3">Inquiry Received</h3>
+              <h3 className="font-display text-2xl text-foreground mb-3">
+                {t.inquiryReceived}
+              </h3>
               <p className="font-body text-muted-foreground text-sm max-w-md mx-auto">
-                Thank you for your interest. Our licensing team will review your submission
-                and respond within 2–3 business days.
+               {t.inquiryThanks}
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-2">
               <div>
                 <label className="block font-body text-xs tracking-widest uppercase text-muted-foreground mb-2">
-                  Company / Distributor
+                  {t.companyLabel}
                 </label>
                 <input
                   type="text"
@@ -78,7 +81,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               </div>
               <div>
                 <label className="block font-body text-xs tracking-widest uppercase text-muted-foreground mb-2">
-                  Corporate Email
+                  {t.emailLabel}
                 </label>
                 <input
                   type="email"
@@ -93,7 +96,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               </div>
               <div>
                 <label className="block font-body text-xs tracking-widest uppercase text-muted-foreground mb-2">
-                  Catalog Details
+                  {t.detailsLabel}
                 </label>
                 <textarea
                   name="details"
@@ -110,17 +113,17 @@ const handleSubmit = async (e: React.FormEvent) => {
                 type="submit"
                 className="metallic-shine w-full rounded-sm bg-primary px-6 py-2.5 font-body text-sm font-semibold tracking-wider uppercase text-primary-foreground transition-all duration-300 hover:brightness-110 gold-glow-strong"
               >
-                Submit Inquiry
+                {t.submitInquiry}
               </button>
-              <p className="font-body text-[11px] text-muted-foreground/50 text-center mt-4">
-                All inquiries are reviewed under our rights compliance guidelines.
-              </p>
+<p className="font-body text-[11px] text-muted-foreground/50 text-center mt-4">
+  {t.complianceNote}
+</p>
 
               {/* === Direct email fallback === */}
 <div className="pt-6 text-center">
-  <p className="font-body text-xs text-muted-foreground mb-3">
-    For direct licensing communication:
-  </p>
+<p className="font-body text-xs text-muted-foreground mb-3">
+  {t.directContact}
+</p>
 
   <a
     href="mailto:cineatlas.contacto@gmail.com"

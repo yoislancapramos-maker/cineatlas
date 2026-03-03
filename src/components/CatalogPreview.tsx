@@ -1,15 +1,19 @@
+import { useLanguage } from "@/context/LanguageContext";
+
 const placeholders = Array.from({ length: 6 });
 
 const CatalogPreview = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="catalog" className="py-24 md:py-32">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-5xl font-bold text-gold-gradient gold-text-glow mb-4">
-            Catalog in Preparation
+            {t.catalogTitle}
           </h2>
           <p className="font-body text-muted-foreground max-w-xl mx-auto">
-            Our curated film catalog is currently being assembled for AVOD distribution.
+            {t.catalogSubtitle}
           </p>
         </div>
 
@@ -28,7 +32,7 @@ const CatalogPreview = () => {
                     </svg>
                   </div>
                   <span className="font-body text-[10px] tracking-widest uppercase text-muted-foreground/50">
-                    TBA
+                    {t.catalogTBA}
                   </span>
                 </div>
               </div>
@@ -37,7 +41,7 @@ const CatalogPreview = () => {
         </div>
 
         <p className="text-center mt-8 font-body text-xs tracking-widest uppercase text-muted-foreground/60">
-          Titles to be announced
+          {t.catalogFooter}
         </p>
       </div>
     </section>
