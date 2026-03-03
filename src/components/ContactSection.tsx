@@ -4,11 +4,9 @@ const ContactSection = () => {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ company: "", email: "", details: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!form.company.trim() || !form.email.trim() || !form.details.trim()) return;
-    setSubmitted(true);
-  };
+const handleSubmit = () => {
+  setSubmitted(true);
+};
 
   return (
  <section id="contact" className="py-10 md:py-12 scroll-mt-[42px]">
