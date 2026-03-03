@@ -4,8 +4,30 @@ const ContactSection = () => {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ company: "", email: "", details: "" });
 
-const handleSubmit = () => {
-  setSubmitted(true);
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  if (!form.company.trim() || !form.email.trim() || !form.details.trim()) return;
+
+  try {
+    const res = await fetch("https://formspree.io/f/xreawjnd", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+
+    if (res.ok) {
+      setSubmitted(true);
+      setForm({ company: "", email: "", details: "" });
+    } else {
+      alert("Error sending form");
+    }
+  } catch (err) {
+    alert("Network error");
+  }
 };
 
   return (
@@ -35,12 +57,7 @@ const handleSubmit = () => {
               </p>
             </div>
           ) : (
-            <form
-  action="https://formspree.io/f/xreawjnd"
-  method="POST"
-  onSubmit={handleSubmit}
-  className="space-y-2"
->
+            <form onSubmit={handleSubmit} className="space-y-2">
               <div>
                 <label className="block font-body text-xs tracking-widest uppercase text-muted-foreground mb-2">
                   Company / Distributor
