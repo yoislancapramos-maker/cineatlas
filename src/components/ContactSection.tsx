@@ -86,6 +86,9 @@ const ContactSection = () => {
               >
                 Submit Inquiry
               </button>
+              <p className="font-body text-[11px] text-muted-foreground/50 text-center mt-4">
+                All inquiries are reviewed under our rights compliance guidelines.
+              </p>
             </form>
           )}
         </div>
