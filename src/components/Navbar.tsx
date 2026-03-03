@@ -46,12 +46,12 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            className="metallic-shine rounded border border-primary/50 bg-primary/10 px-5 py-2 font-body text-sm font-medium tracking-wider uppercase text-primary transition-all duration-300 hover:bg-primary/20 hover:border-primary/70 gold-glow"
-          >
-            License Content
-          </a>
+<a
+  href="#contact"
+  className="metallic-shine shine-sweep rounded border border border-primary/30 bg-primary px-5 py-2 font-body text-sm font-semibold tracking-wider uppercase text-primary-foreground transition-all duration-300 hover:brightness-110 gold-glow-strong"
+>
+  License Content
+</a>
         </div>
       </div>
     </nav>

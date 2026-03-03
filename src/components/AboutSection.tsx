@@ -1,18 +1,18 @@
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 md:py-32">
+    <section id="about" className="py-24 md:py-28">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image */}
           <div className="relative">
-            <div className="relative rounded-sm overflow-hidden border border-border/50 gold-glow">
+            <div className="banner-gold-rim rounded-sm overflow-hidden max-w-[460px] mx-auto">
               <img
                 src="/about-cinema.png"
                 alt="CineAtlas film distribution facility"
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent" />
+              
             </div>
           </div>
 

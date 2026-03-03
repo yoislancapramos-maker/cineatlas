@@ -40,7 +40,7 @@ const HowWeWork = () => {
           {steps.map(({ icon: Icon, title, desc }, i) => (
             <div
               key={title}
-              className="glass-card rounded-sm p-8 group hover:-translate-y-1 transition-all duration-500 hover:gold-glow"
+              className="glass-card rounded-sm p-8 group banner-gold-rim hover:-translate-y-1 transition-all duration-500"
               style={{ animationDelay: `${i * 0.15}s` }}
             >
               <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-sm border border-primary/20 bg-primary/5">

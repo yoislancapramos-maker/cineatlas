@@ -17,7 +17,7 @@ const CatalogPreview = () => {
           {placeholders.map((_, i) => (
             <div
               key={i}
-              className="group relative aspect-[2/3] overflow-hidden rounded-sm cursor-default border border-border/30 hover:border-primary/30 transition-all duration-500 hover:gold-glow"
+              className="group relative aspect-[2/3] overflow-hidden rounded-sm cursor-default card-gold-rim transition-all duration-500 hover:gold-glow"
             >
               {/* Dark placeholder background */}
               <div className="absolute inset-0 bg-cinema-surface flex items-center justify-center">

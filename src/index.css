@@ -196,3 +196,57 @@
   0%, 100% { box-shadow: 0 0 20px hsl(43, 72%, 55%, 0.15); }
   50% { box-shadow: 0 0 30px hsl(43, 72%, 55%, 0.25), 0 0 60px hsl(43, 72%, 55%, 0.1); }
 }
+
+/* === CineAtlas Gold Rim Glow — calibrated === */
+.banner-gold-rim {
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.35),
+    0 0 28px rgba(212, 175, 55, 0.25),
+    0 0 64px rgba(212, 175, 55, 0.18),
+    0 0 110px rgba(212, 175, 55, 0.12);
+}
+
+/* === CineAtlas Button Shine Sweep === */
+.shine-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-sweep::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -120%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 215, 120, 0.0) 30%,
+    rgba(255, 215, 120, 0.45) 50%,
+    rgba(255, 215, 120, 0.0) 70%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  animation: cineatlas-shine 3.8s ease-in-out infinite;
+}
+
+/* === CineAtlas Card Gold Rim — subtle (catalog safe) === */
+.card-gold-rim {
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.22),
+    0 0 18px rgba(212, 175, 55, 0.12),
+    0 0 40px rgba(212, 175, 55, 0.08);
+}
+
+@keyframes cineatlas-shine {
+  0% {
+    left: -120%;
+  }
+  60% {
+    left: 140%;
+  }
+  100% {
+    left: 140%;
+  }
+}

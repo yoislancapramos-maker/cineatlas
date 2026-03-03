@@ -2,7 +2,7 @@ const OperationalFramework = () => {
   return (
     <section className="py-24 md:py-32">
       <div className="container mx-auto px-6 max-w-3xl">
-        <div className="glass-card rounded-sm p-10 md:p-14 gold-glow">
+        <div className="glass-card rounded-sm p-10 md:p-14 banner-gold-rim">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-gold-gradient gold-text-glow mb-8 text-center">
             Operational Framework
           </h2>
