@@ -37,13 +37,19 @@ const ContactSection = () => {
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-2">
+            <form
+  action="https://formspree.io/f/xreawjnd"
+  method="POST"
+  onSubmit={handleSubmit}
+  className="space-y-2"
+>
               <div>
                 <label className="block font-body text-xs tracking-widest uppercase text-muted-foreground mb-2">
                   Company / Distributor
                 </label>
                 <input
                   type="text"
+                  name="company"
                   value={form.company}
                   onChange={(e) => setForm({ ...form, company: e.target.value })}
                   className="w-full bg-input border border-border/50 rounded-sm px-4 py-2 font-body text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all"
@@ -58,6 +64,7 @@ const ContactSection = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   className="w-full bg-input border border-border/50 rounded-sm px-4 py-2 font-body text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all"
@@ -71,6 +78,7 @@ const ContactSection = () => {
                   Catalog Details
                 </label>
                 <textarea
+                  name="details"
                   value={form.details}
                   onChange={(e) => setForm({ ...form, details: e.target.value })}
                   rows={3}

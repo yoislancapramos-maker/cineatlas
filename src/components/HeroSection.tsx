@@ -45,15 +45,14 @@ const HeroSection = () => {
             className="font-body text-muted-foreground text-sm sm:text-base max-w-2xl mx-auto mb-3 leading-relaxed opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.3s" }}
           >
-            Professional film monetization through licensed AVOD distribution.
-            Rights-compliant workflows and distributor-focused operations.
+           Professional monetization of licensed films across YouTube AVOD infrastructure. Flexible deal structures including Revenue Share, MG, and hybrid models for rights holders.
           </p>
 
           <p
             className="font-body text-foreground/75 text-xs sm:text-sm max-w-xl mx-auto mb-8 tracking-wide opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.45s" }}
           >
-            Focused on licensed film distribution across advertising-supported platforms.
+            Built for legitimate, rights-aware AVOD exploitation in collaboration with distributors and content owners.
           </p>
 
           {/* ===== BANNER STRIP (NUEVO) ===== */}
