@@ -16,11 +16,14 @@ const Footer = () => {
           Professional YouTube AVOD film distribution. Licensed content, optimized monetization,
           and rights-compliant workflows for global territories.
         </p>
-        <div className="pt-4 border-t border-border/20">
+        <div className="pt-4 border-t border-border/20 space-y-3">
           <p className="font-body text-[11px] text-muted-foreground/60">
             © {new Date().getFullYear()} CineAtlas. All rights reserved. Content distribution subject to
             territorial licensing agreements and rights holder approval. CineAtlas does not claim
             ownership of distributed content.
+          </p>
+          <p className="font-body text-[11px] text-muted-foreground/40">
+            CineAtlas operates as an independent AVOD distribution initiative focused on licensed cinematic content.
           </p>
         </div>
       </div>
