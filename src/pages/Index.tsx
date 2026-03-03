@@ -22,8 +22,8 @@ const Index = () => {
       <OperationalFramework />
       <CatalogPreview />
       <AboutSection />
-      <RightsCompliance />
       <DistributorStrip />
+      <RightsCompliance />
       <ContactSection />
       <Footer />
     </div>

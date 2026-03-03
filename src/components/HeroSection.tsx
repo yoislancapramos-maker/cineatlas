@@ -59,11 +59,17 @@ const HeroSection = () => {
           </h1>
 
           <p
-            className="font-body text-muted-foreground text-sm sm:text-base max-w-2xl mx-auto mb-8 leading-relaxed opacity-0 animate-fade-in-up"
+            className="font-body text-muted-foreground text-sm sm:text-base max-w-2xl mx-auto mb-3 leading-relaxed opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.3s" }}
           >
             Professional film monetization through licensed AVOD distribution. 
             Rights-compliant workflows and distributor-focused operations.
+          </p>
+          <p
+            className="font-body text-foreground/75 text-xs sm:text-sm max-w-xl mx-auto mb-8 tracking-wide opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "0.45s" }}
+          >
+            Focused on licensed film distribution across advertising-supported platforms.
           </p>
 
           <div
