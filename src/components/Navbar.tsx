@@ -46,7 +46,7 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
-              className="px-2.5 py-1.5 rounded-sm border border-primary/20 font-body text-xs tracking-widest uppercase text-foreground/80 hover:text-primary hover:border-primary/40 hover:bg-primary/5 transition-all duration-300"
+              className="px-2.5 py-1.5 rounded-sm border border-primary/40 font-body text-xs tracking-widest uppercase text-foreground/80 hover:text-primary hover:border-primary hover:bg-primary/5 transition-all duration-300"
             >
               {link.label}
             </a>
@@ -61,17 +61,17 @@ const Navbar = () => {
           </a>
 
           {/* LANGUAGE SWITCH */}
-          <div className="flex rounded-full border border-primary/40 overflow-hidden">
+          <div className="flex rounded-sm border border-primary/40 overflow-hidden hover:border-primary transition-all duration-300">
             <button
-              onClick={() => setLang("en")}
-              className={`px-2 py-1 text-[10px] font-semibold tracking-wider uppercase transition-all ${
-                lang === "en"
-                  ? "bg-primary text-primary-foreground"
-                  : "text-white hover:bg-primary/10"
-              }`}
-            >
-              EN
-            </button>
+  onClick={() => setLang("en")}
+  className={`px-2 py-1 text-[10px] font-semibold tracking-wider uppercase transition-all duration-300 ${
+    lang === "en"
+      ? "text-primary drop-shadow-[0_0_6px_rgba(212,175,55,0.9)]"
+      : "text-white hover:bg-primary/10"
+  }`}
+>
+  EN
+</button>
 
             <button
               onClick={() => setLang("es")}
@@ -95,7 +95,7 @@ const Navbar = () => {
               onClick={() => setLang("en")}
               className={`px-2 py-1 text-[10px] font-semibold uppercase ${
                 lang === "en"
-                  ? "bg-primary text-primary-foreground"
+                  ? "text-gold-gradient gold-text-glow"
                   : "text-white"
               }`}
             >
@@ -106,7 +106,7 @@ const Navbar = () => {
               onClick={() => setLang("es")}
               className={`px-2 py-1 text-[10px] font-semibold uppercase ${
                 lang === "es"
-                  ? "bg-primary text-primary-foreground"
+                  ? "text-gold-gradient gold-text-glow"
                   : "text-white"
               }`}
             >
