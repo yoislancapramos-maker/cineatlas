@@ -11,7 +11,7 @@ export const translations = {
     // HERO
     heroTitle1: "YouTube AVOD",
     heroTitle2: "Film Monetization",
-    heroTitleMobile2: "Film Distribution",
+    heroTitleMobile2: "Film Monetization",
     heroInfra: "YouTube AVOD Infrastructure",
 
     heroParagraph1:
@@ -98,11 +98,11 @@ territoriesOutro:
 "Distribution is always carried out respecting the territorial restrictions of each licensing agreement.",
 
     // CATALOG PREVIEW
-    catalogTitle: "Catalog in Preparation",
-    catalogSubtitle:
-      "Our curated film catalog is currently being assembled for AVOD distribution.",
+    catalogTitle: "Film Catalog",
+  catalogSubtitle:
+  "Selection of licensed films for exhibition on the CineAtlas AVOD channel. Each title forms part of official agreements with distributors and rights holders.",
     catalogTBA: "TBA",
-    catalogFooter: "Titles to be announced",
+    catalogFooter: "More licensed titles will be added soon.",
 
     // ABOUT
     aboutTitle: "About CineAtlas",
@@ -165,7 +165,7 @@ platformText:
     // HERO
     heroTitle1: "YouTube AVOD",
     heroTitle2: "Monetización de Películas",
-    heroTitleMobile2: "Distribución de Películas",
+    heroTitleMobile2: "Monetización de Películas",
     heroInfra: "Infraestructura AVOD en YouTube",
 
     heroParagraph1:
@@ -252,11 +252,11 @@ territoriesOutro:
 "La distribución siempre se realiza respetando las restricciones territoriales de cada acuerdo de licencia.",
 
     // CATALOG PREVIEW
-    catalogTitle: "Catálogo en Preparación",
-    catalogSubtitle:
-      "Nuestro catálogo curado de películas se encuentra actualmente en preparación para distribución AVOD.",
+    catalogTitle: "Catálogo de Películas",
+catalogSubtitle:
+  "Selección de películas licenciadas para exhibición en el canal AVOD CineAtlas. Cada título forma parte de acuerdos oficiales con distribuidores y titulares de derechos.",
     catalogTBA: "Próximamente",
-    catalogFooter: "Títulos por anunciar",
+    catalogFooter: "Más títulos licenciados se añadirán próximamente.",
 
     // ABOUT
     aboutTitle: "Sobre CineAtlas",
