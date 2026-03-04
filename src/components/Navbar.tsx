@@ -60,59 +60,63 @@ const Navbar = () => {
             {t.navSubmitTitles}
           </a>
 
-          {/* LANGUAGE SWITCH */}
-          <div className="flex rounded-sm border border-primary/40 overflow-hidden hover:border-primary transition-all duration-300">
-            <button
-  onClick={() => setLang("en")}
-  className={`px-2 py-1 text-[10px] font-semibold tracking-wider uppercase transition-all duration-300 ${
-    lang === "en"
-      ? "text-primary drop-shadow-[0_0_6px_rgba(212,175,55,0.9)]"
-      : "text-white hover:bg-primary/10"
-  }`}
->
-  EN
-</button>
+        {/* LANGUAGE SWITCH */}
+<div className="flex rounded-full border border-primary/40 overflow-hidden bg-black/40 backdrop-blur-sm">
 
-            <button
-              onClick={() => setLang("es")}
-              className={`px-2 py-1 text-[10px] font-semibold tracking-wider uppercase transition-all ${
-                lang === "es"
-                  ? "bg-primary text-primary-foreground"
-                  : "text-white hover:bg-primary/10"
-              }`}
-            >
-              ES
-            </button>
-          </div>
+  <button
+    onClick={() => setLang("en")}
+    className={`px-3 py-1.5 text-[10px] font-semibold tracking-wider uppercase transition-all duration-300 ${
+      lang === "en"
+        ? "bg-primary text-primary-foreground shadow-[0_0_10px_rgba(212,175,55,0.6)]"
+        : "text-white hover:bg-primary/10"
+    }`}
+  >
+    EN
+  </button>
+
+  <button
+    onClick={() => setLang("es")}
+    className={`px-3 py-1.5 text-[10px] font-semibold tracking-wider uppercase transition-all duration-300 ${
+      lang === "es"
+        ? "bg-primary text-primary-foreground shadow-[0_0_10px_rgba(212,175,55,0.6)]"
+        : "text-white hover:bg-primary/10"
+    }`}
+  >
+    ES
+  </button>
+
+</div>
         </div>
 
         {/* MOBILE RIGHT SIDE */}
         <div className="flex md:hidden items-center gap-3">
 
-          {/* LANGUAGE SWITCH MOBILE */}
-          <div className="flex rounded-full border border-primary/40 overflow-hidden">
-            <button
-              onClick={() => setLang("en")}
-              className={`px-2 py-1 text-[10px] font-semibold uppercase ${
-                lang === "en"
-                  ? "text-gold-gradient gold-text-glow"
-                  : "text-white"
-              }`}
-            >
-              EN
-            </button>
+        {/* LANGUAGE SWITCH MOBILE */}
+<div className="flex rounded-full border border-primary/40 overflow-hidden bg-black/40 backdrop-blur-sm">
 
-            <button
-              onClick={() => setLang("es")}
-              className={`px-2 py-1 text-[10px] font-semibold uppercase ${
-                lang === "es"
-                  ? "text-gold-gradient gold-text-glow"
-                  : "text-white"
-              }`}
-            >
-              ES
-            </button>
-          </div>
+  <button
+    onClick={() => setLang("en")}
+    className={`px-3 py-1 text-[10px] font-semibold uppercase transition-all duration-300 ${
+      lang === "en"
+        ? "bg-primary text-primary-foreground shadow-[0_0_8px_rgba(212,175,55,0.6)]"
+        : "text-white"
+    }`}
+  >
+    EN
+  </button>
+
+  <button
+    onClick={() => setLang("es")}
+    className={`px-3 py-1 text-[10px] font-semibold uppercase transition-all duration-300 ${
+      lang === "es"
+        ? "bg-primary text-primary-foreground shadow-[0_0_8px_rgba(212,175,55,0.6)]"
+        : "text-white"
+    }`}
+  >
+    ES
+  </button>
+
+</div>
 
           {/* HAMBURGER */}
           <button
