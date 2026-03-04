@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -10,18 +12,16 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { label: "Catalog", href: "#catalog" },
-    { label: "Distributors", href: "#how-we-work" },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: t.navCatalog, href: "#catalog" },
+    { label: t.navDistributors, href: "#how-we-work" },
+    { label: t.navAbout, href: "#about" },
+    { label: t.navContact, href: "#contact" },
   ];
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "glass-dark py-3"
-          : "bg-transparent py-5"
+        scrolled ? "glass-dark py-3" : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6">
@@ -41,17 +41,18 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
-              className="font-body text-sm tracking-widest uppercase text-foreground/70 hover:text-primary transition-colors duration-300"
+              className="px-3 py-1.5 rounded-sm border border-primary/20 font-body text-sm tracking-widest uppercase text-foreground/80 hover:text-primary hover:border-primary/40 hover:bg-primary/5 transition-all duration-300"
             >
               {link.label}
             </a>
           ))}
-<a
-  href="#contact"
-  className="metallic-shine shine-sweep rounded border border border-primary/30 bg-primary px-5 py-2 font-body text-sm font-semibold tracking-wider uppercase text-primary-foreground transition-all duration-300 hover:brightness-110 gold-glow-strong"
->
-  Submit Your Titles
-</a>
+
+          <a
+            href="#contact"
+            className="metallic-shine shine-sweep rounded border border border-primary/30 bg-primary px-5 py-2 font-body text-sm font-semibold tracking-wider uppercase text-primary-foreground transition-all duration-300 hover:brightness-110 gold-glow-strong"
+          >
+            {t.navSubmitTitles}
+          </a>
         </div>
       </div>
     </nav>

@@ -1,5 +1,13 @@
 export const translations = {
   en: {
+
+    // NAVBAR
+    navCatalog: "Catalog",
+    navDistributors: "Distributors",
+    navAbout: "About",
+    navContact: "Contact",
+    navSubmitTitles: "Submit Your Titles",
+
     // HERO
     heroTitle1: "YouTube AVOD",
     heroTitle2: "Film Monetization",
@@ -101,7 +109,7 @@ export const translations = {
     distributorDesc:
       "CineAtlas collaborates with film distributors, sales agents, and rights holders seeking structured AVOD exploitation of licensed content. We prioritize clear licensing frameworks, responsible platform management, and transparent performance reporting.",
 
-    // ✅ FOOTER (AÑADIDO)
+    // FOOTER
     footerDesc:
       "Professional YouTube AVOD film distribution. Licensed content, optimized monetization, and rights-compliant workflows for global territories.",
 
@@ -113,6 +121,14 @@ export const translations = {
   },
 
   es: {
+
+    // NAVBAR
+    navCatalog: "Catálogo",
+    navDistributors: "Distribuidores",
+    navAbout: "Sobre Nosotros",
+    navContact: "Contacto",
+    navSubmitTitles: "Enviar Títulos",
+
     // HERO
     heroTitle1: "YouTube AVOD",
     heroTitle2: "Monetización de Películas",
@@ -214,7 +230,7 @@ export const translations = {
     distributorDesc:
       "CineAtlas colabora con distribuidores de cine, agentes de ventas y titulares de derechos que buscan una explotación AVOD estructurada de contenido licenciado. Priorizamos marcos de licenciamiento claros, gestión responsable de plataformas y reportes de rendimiento transparentes.",
 
-    // ✅ FOOTER (AÑADIDO)
+    // FOOTER
     footerDesc:
       "Distribución profesional de películas AVOD en YouTube. Contenido licenciado, monetización optimizada y flujos de trabajo conformes a derechos para territorios globales.",
 
