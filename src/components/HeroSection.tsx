@@ -75,8 +75,8 @@ const HeroSection = () => {
             />
 
             {/* overlays suaves */}
-            <div className="absolute inset-0 bg-background/5" />
-            <div className="absolute inset-0 vignette" />
+            <div className="absolute inset-0 bg-background/0" />
+            
 
             {/* glow dorado suave */}
             <div
