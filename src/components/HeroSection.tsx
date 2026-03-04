@@ -75,7 +75,7 @@ const HeroSection = () => {
             />
 
             {/* overlays suaves */}
-            <div className="absolute inset-0 bg-background/10" />
+            <div className="absolute inset-0 bg-background/5" />
             <div className="absolute inset-0 vignette" />
 
             {/* glow dorado suave */}
@@ -83,7 +83,7 @@ const HeroSection = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "radial-gradient(ellipse at center, hsl(43, 72%, 55%, 0.06) 0%, transparent 65%)",
+                  "radial-gradient(ellipse at center, hsl(43, 72%, 55%, 0.10) 0%, transparent 65%)",
               }}
             />
           </div>
