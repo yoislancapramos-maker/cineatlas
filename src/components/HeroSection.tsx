@@ -83,7 +83,7 @@ const HeroSection = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "radial-gradient(ellipse at center, hsl(43, 72%, 55%, 0.10) 0%, transparent 65%)",
+                  "radial-gradient(ellipse at center, hsl(43, 72%, 55%, 0.12) 0%, transparent 65%)",
               }}
             />
           </div>

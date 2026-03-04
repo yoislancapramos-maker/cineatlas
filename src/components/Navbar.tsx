@@ -3,6 +3,7 @@ import { useLanguage } from "@/context/LanguageContext";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const { t, lang, setLang } = useLanguage();
 
   useEffect(() => {
@@ -38,8 +39,8 @@ const Navbar = () => {
           </span>
         </a>
 
-        {/* NAV */}
-        <div className="hidden md:flex items-center gap-6">
+        {/* DESKTOP NAV */}
+        <div className="hidden md:flex items-center gap-4">
 
           {navLinks.map((link) => (
             <a
@@ -83,9 +84,74 @@ const Navbar = () => {
               ES
             </button>
           </div>
+        </div>
+
+        {/* MOBILE RIGHT SIDE */}
+        <div className="flex md:hidden items-center gap-3">
+
+          {/* LANGUAGE SWITCH MOBILE */}
+          <div className="flex rounded-full border border-primary/40 overflow-hidden">
+            <button
+              onClick={() => setLang("en")}
+              className={`px-2 py-1 text-[10px] font-semibold uppercase ${
+                lang === "en"
+                  ? "bg-primary text-primary-foreground"
+                  : "text-white"
+              }`}
+            >
+              EN
+            </button>
+
+            <button
+              onClick={() => setLang("es")}
+              className={`px-2 py-1 text-[10px] font-semibold uppercase ${
+                lang === "es"
+                  ? "bg-primary text-primary-foreground"
+                  : "text-white"
+              }`}
+            >
+              ES
+            </button>
+          </div>
+
+          {/* HAMBURGER */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-primary text-xl"
+          >
+            ☰
+          </button>
 
         </div>
       </div>
+
+      {/* MOBILE MENU */}
+      {menuOpen && (
+        <div className="md:hidden bg-black/90 backdrop-blur-md border-t border-primary/20">
+          <div className="flex flex-col items-center py-6 gap-4">
+
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="font-body text-sm uppercase tracking-widest text-white hover:text-primary"
+              >
+                {link.label}
+              </a>
+            ))}
+
+            <a
+              href="#contact"
+              onClick={() => setMenuOpen(false)}
+              className="rounded border border-primary/30 bg-primary px-5 py-2 text-xs font-semibold uppercase tracking-wider text-primary-foreground"
+            >
+              {t.navSubmitTitles}
+            </a>
+
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
