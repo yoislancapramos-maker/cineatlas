@@ -12,7 +12,7 @@ export const translations = {
     heroTitle1: "YouTube AVOD",
     heroTitle2: "Film Monetization",
     heroTitleMobile2: "Film Distribution",
-    heroInfra: "Infrastructure",
+    heroInfra: "YouTube AVOD Infrastructure",
 
     heroParagraph1:
       "Professional monetization of licensed films across YouTube AVOD infrastructure. Flexible deal structures including Revenue Share, MG, and hybrid models for rights holders.",
@@ -20,7 +20,7 @@ export const translations = {
     heroParagraph2:
       "Built for legitimate, rights-aware AVOD exploitation in collaboration with distributors and content owners.",
 
-    exploreCatalog: "Explore Catalog",
+    exploreCatalog: "Catalog in Preparation",
     forDistributors: "For Distributors",
 
     // CONTACT
@@ -58,7 +58,21 @@ export const translations = {
 
     step4Title: "Monetization & Reporting",
     step4Desc:
-      "Real-time revenue tracking with detailed analytics and periodic performance reporting.",
+      "Performance tracking and periodic revenue reporting based on platform analytics.",
+
+      licensingModelsTitle: "Licensing Models",
+
+licensingIntro:
+"CineAtlas works with flexible licensing structures adapted to the AVOD model:",
+
+licensing1: "Revenue Share (participation in advertising revenue)",
+
+licensing2: "Minimum Guarantee (MG) against future revenue",
+
+licensing3: "Hybrid models depending on the title's potential",
+
+licensingOutro:
+"Each agreement is structured according to territory, rights availability and monetization strategy.",
 
     // OPERATIONAL FRAMEWORK
     operationalTitle: "Operational Framework",
@@ -68,6 +82,20 @@ export const translations = {
 
     operationalP2:
       "Our workflows emphasize compliance, transparent reporting, and long-term collaboration with distributors and rights holders across advertising-supported environments.",
+
+      territoriesTitle: "Distribution Territories",
+
+territoriesIntro:
+"CineAtlas focuses primarily on Spanish-speaking audiences, including:",
+
+territory1: "Latin America",
+
+territory2: "U.S. Hispanic market",
+
+territory3: "Selected international territories depending on rights availability",
+
+territoriesOutro:
+"Distribution is always carried out respecting the territorial restrictions of each licensing agreement.",
 
     // CATALOG PREVIEW
     catalogTitle: "Catalog in Preparation",
@@ -80,13 +108,18 @@ export const translations = {
     aboutTitle: "About CineAtlas",
 
     aboutP1:
-      "CineAtlas operates as a professional YouTube AVOD distribution platform, specializing in the monetization of licensed film content across global territories.",
+      "CineAtlas operates as an AVOD channel specialized in the monetization of licensed films on YouTube.",
 
     aboutP2:
       "Our infrastructure is built around rights compliance, distributor collaboration, and revenue optimization — ensuring that every title in our catalog is properly licensed, strategically positioned, and transparently reported.",
 
     aboutP3:
       "We work exclusively with content licensors and distributors who share our commitment to legitimate, rights-aware digital distribution. Every workflow is designed to protect intellectual property while maximizing AVOD revenue potential.",
+
+      platformTitle: "Distribution Platform",
+
+platformText:
+"Distribution is carried out through AVOD channels on YouTube optimized for genre film audiences. Our strategy combines metadata optimization, content positioning, and performance analytics to maximize reach and monetization.",
 
     // RIGHTS & COMPLIANCE
     rightsTitle: "Rights & Compliance",
@@ -133,7 +166,7 @@ export const translations = {
     heroTitle1: "YouTube AVOD",
     heroTitle2: "Monetización de Películas",
     heroTitleMobile2: "Distribución de Películas",
-    heroInfra: "Infraestructura",
+    heroInfra: "Infraestructura AVOD en YouTube",
 
     heroParagraph1:
       "Monetización profesional de películas licenciadas a través de infraestructura AVOD en YouTube. Estructuras flexibles incluyendo Revenue Share, MG y modelos híbridos para titulares de derechos.",
@@ -141,14 +174,14 @@ export const translations = {
     heroParagraph2:
       "Diseñado para explotación AVOD legítima y conforme a derechos en colaboración con distribuidores y propietarios de contenido.",
 
-    exploreCatalog: "Explorar Catálogo",
+    exploreCatalog: "Catálogo en preparación",
     forDistributors: "Para Distribuidores",
 
     // CONTACT
     licensingTitle: "Consultas de Licencia",
-    companyLabel: "Empresa / Distribuidor",
+    companyLabel: "Nombre de la empresa",
     emailLabel: "Email Corporativo",
-    detailsLabel: "Detalles del Catálogo",
+    detailsLabel: "Describe tu catálogo, número de títulos, géneros y territorios disponibles",
     submitInquiry: "Enviar Consulta",
 
     inquiryReceived: "Consulta Recibida",
@@ -179,7 +212,21 @@ export const translations = {
 
     step4Title: "Monetización y Reportes",
     step4Desc:
-      "Seguimiento de ingresos en tiempo real con analíticas detalladas y reportes periódicos de rendimiento.",
+      "Seguimiento de rendimiento y reportes periódicos de ingresos basados en analíticas de la plataforma.",
+
+      licensingModelsTitle: "Modelos de Licenciamiento",
+
+licensingIntro:
+"CineAtlas trabaja con estructuras de licenciamiento flexibles adaptadas al modelo AVOD:",
+
+licensing1: "Revenue Share (participación en ingresos)",
+
+licensing2: "Minimum Guarantee (MG) contra ingresos futuros",
+
+licensing3: "Modelos híbridos según el potencial del título",
+
+licensingOutro:
+"Cada acuerdo se estructura según territorio, disponibilidad de derechos y estrategia de monetización.",
 
     // OPERATIONAL FRAMEWORK
     operationalTitle: "Marco Operativo",
@@ -189,6 +236,20 @@ export const translations = {
 
     operationalP2:
       "Nuestros flujos de trabajo priorizan el cumplimiento, la transparencia en reportes y la colaboración a largo plazo con distribuidores y titulares de derechos en entornos con publicidad.",
+
+      territoriesTitle: "Territorios de Distribución",
+
+territoriesIntro:
+"CineAtlas se enfoca principalmente en la audiencia hispanohablante, incluyendo:",
+
+territory1: "América Latina",
+
+territory2: "Mercado hispano de Estados Unidos",
+
+territory3: "Territorios internacionales seleccionados según disponibilidad de derechos",
+
+territoriesOutro:
+"La distribución siempre se realiza respetando las restricciones territoriales de cada acuerdo de licencia.",
 
     // CATALOG PREVIEW
     catalogTitle: "Catálogo en Preparación",
@@ -201,13 +262,18 @@ export const translations = {
     aboutTitle: "Sobre CineAtlas",
 
     aboutP1:
-      "CineAtlas opera como una plataforma profesional de distribución AVOD en YouTube, especializada en la monetización de contenido cinematográfico licenciado en territorios globales.",
+      "CineAtlas opera como un canal AVOD especializado en la monetización de películas licenciadas en YouTube.",
 
     aboutP2:
       "Nuestra infraestructura se basa en el cumplimiento de derechos, la colaboración con distribuidores y la optimización de ingresos, garantizando que cada título de nuestro catálogo esté debidamente licenciado, estratégicamente posicionado y reportado con transparencia.",
 
     aboutP3:
       "Trabajamos exclusivamente con licenciantes y distribuidores de contenido que comparten nuestro compromiso con la distribución digital legítima y consciente de los derechos. Cada flujo de trabajo está diseñado para proteger la propiedad intelectual mientras maximiza el potencial de ingresos AVOD.",
+
+      platformTitle: "Plataforma de Distribución",
+
+platformText:
+"La distribución se realiza a través de canales AVOD en YouTube optimizados para audiencias de cine de género. Nuestra estrategia combina optimización de metadatos, posicionamiento de contenido y análisis de rendimiento para maximizar el alcance y la monetización.",
 
     // RIGHTS & COMPLIANCE
     rightsTitle: "Derechos y Cumplimiento",

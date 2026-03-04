@@ -74,7 +74,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   value={form.company}
                   onChange={(e) => setForm({ ...form, company: e.target.value })}
                   className="w-full bg-input border border-border/50 rounded-sm px-4 py-2 font-body text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all"
-                  placeholder="Your company name"
+                  placeholder={t.companyLabel}
                   required
                   maxLength={100}
                 />
@@ -104,7 +104,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   onChange={(e) => setForm({ ...form, details: e.target.value })}
                   rows={3}
                   className="w-full bg-input border border-border/50 rounded-sm px-4 py-2 font-body text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all resize-none"
-                  placeholder="Describe your catalog, number of titles, genres, and territories…"
+                  placeholder={t.detailsLabel}
                   required
                   maxLength={1000}
                 />
