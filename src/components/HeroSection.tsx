@@ -3,7 +3,7 @@ import { useLanguage } from "@/context/LanguageContext";
 const HeroSection = () => {
   const { t } = useLanguage();
   return (
-    <section className="relative overflow-hidden w-full bg-background pt-16 pb-10 min-h-[78vh]flex items-start md:items-center">
+    <section className="relative overflow-hidden w-full bg-background pt-20 pb-10 min-h-[78vh]flex items-start md:items-center">
       
       {/* CONTENT */}
       <div className="relative z-20 container mx-auto px-6 text-center">
@@ -61,7 +61,7 @@ const HeroSection = () => {
           {/* ===== BANNER STRIP (NUEVO) ===== */}
           
 <div
-  className="relative mx-auto mb-8 overflow-hidden rounded-sm opacity-0 animate-fade-in-up banner-gold-rim"
+  className="relative mx-auto mb-6 overflow-hidden rounded-sm opacity-0 animate-fade-in-up banner-gold-rim"
   style={{
     animationDelay: "0.55s",
     maxWidth: "1100px",
