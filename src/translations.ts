@@ -6,7 +6,7 @@ export const translations = {
     navDistributors: "Distributors",
     navAbout: "About",
     navContact: "Contact",
-    navSubmitTitles: "Submit Your Titles",
+    navSubmitTitles: "Licensing",
 
     // HERO
     heroTitle1: "YouTube AVOD",
@@ -20,8 +20,8 @@ export const translations = {
     heroParagraph2:
       "Built for legitimate, rights-aware AVOD exploitation in collaboration with distributors and content owners.",
 
-    exploreCatalog: "Catalog in Preparation",
-    forDistributors: "For Distributors",
+    exploreCatalog: "View Catalog",
+    forDistributors: "For Licensors",
 
     // CONTACT
     licensingTitle: "Licensing Inquiries",
@@ -42,7 +42,7 @@ export const translations = {
     // HOW WE WORK
     howWeWorkTitle: "How We Work",
     howWeWorkSubtitle:
-      "A structured, rights-first approach to AVOD film distribution.",
+      "A structured, rights-first approach to AVOD film exhibition.",
 
     step1Title: "Rights Review",
     step1Desc:
@@ -50,7 +50,7 @@ export const translations = {
 
     step2Title: "Agreement Structure",
     step2Desc:
-      "Transparent deal structuring with clear revenue splits, reporting cadence, and distribution terms.",
+      "Transparent deal structuring with clear revenue splits, reporting cadence, and licensing terms.",
 
     step3Title: "AVOD Optimization",
     step3Desc:
@@ -78,12 +78,12 @@ licensingOutro:
     operationalTitle: "Operational Framework",
 
     operationalP1:
-      "CineAtlas operates under a structured rights-aware framework designed for professional AVOD distribution. Each title is evaluated based on territorial availability, licensing scope, and platform suitability prior to publication.",
+      "CineAtlas operates under a structured rights-aware framework designed for professional AVOD exhibition. Each title is evaluated based on territorial availability, licensing scope, and platform suitability prior to publication.",
 
     operationalP2:
       "Our workflows emphasize compliance, transparent reporting, and long-term collaboration with distributors and rights holders across advertising-supported environments.",
 
-      territoriesTitle: "Distribution Territories",
+      territoriesTitle: "Exhibition Territories",
 
 territoriesIntro:
 "CineAtlas focuses primarily on Spanish-speaking audiences, including:",
@@ -95,7 +95,7 @@ territory2: "U.S. Hispanic market",
 territory3: "Selected international territories depending on rights availability",
 
 territoriesOutro:
-"Distribution is always carried out respecting the territorial restrictions of each licensing agreement.",
+"Exhibition is always carried out respecting the territorial restrictions of each licensing agreement.",
 
     // CATALOG PREVIEW
     catalogTitle: "Film Catalog",
@@ -116,25 +116,25 @@ territoriesOutro:
     aboutP3:
       "We work exclusively with content licensors and distributors who share our commitment to legitimate, rights-aware digital distribution. Every workflow is designed to protect intellectual property while maximizing AVOD revenue potential.",
 
-      platformTitle: "Distribution Platform",
+      platformTitle: "Exhibition Platform",
 
 platformText:
-"Distribution is carried out through AVOD channels on YouTube optimized for genre film audiences. Our strategy combines metadata optimization, content positioning, and performance analytics to maximize reach and monetization.",
+"Exhibition is carried out through AVOD channels on YouTube optimized for genre film audiences. Our strategy combines metadata optimization, content positioning, and performance analytics to maximize reach and monetization.",
 
     // RIGHTS & COMPLIANCE
     rightsTitle: "Rights & Compliance",
 
     rightsP1:
-      "All content distributed through CineAtlas is subject to rights verification and territorial review. We work exclusively under defined licensing agreements and do not claim ownership of third-party content.",
+      "All content exhibited through CineAtlas is subject to rights verification and territorial review. We work exclusively under defined licensing agreements and do not claim ownership of third-party content.",
 
     rightsP2:
-      "Distribution availability may vary based on regional rights and platform policies.",
+      "Exhibition availability may vary based on regional rights and platform policies.",
 
     // TRUST STRIP
     trustTitle: "Industry-Aligned Rights & AVOD Workflow",
     trustBadge1: "Rights-Aware",
     trustBadge2: "AVOD Focused",
-    trustBadge3: "YouTube Distribution",
+    trustBadge3: "YouTube Exhibition",
     trustBadge4: "B2B Ready",
 
     // DISTRIBUTOR STRIP
@@ -144,13 +144,13 @@ platformText:
 
     // FOOTER
     footerDesc:
-      "Professional YouTube AVOD film distribution. Licensed content, optimized monetization, and rights-compliant workflows for global territories.",
+      "Professional YouTube AVOD film exhibition. Licensed content, optimized monetization, and rights-compliant workflows for global territories.",
 
     footerLegal:
-      "All rights reserved. Content distribution subject to territorial licensing agreements and rights holder approval. CineAtlas does not claim ownership of distributed content.",
+      "All rights reserved. Content exhibition subject to territorial licensing agreements and rights holder approval. CineAtlas does not claim ownership of exhibited content.",
 
     footerNote:
-      "CineAtlas operates as an independent AVOD distribution initiative focused on licensed cinematic content.",
+      "CineAtlas operates as an independent AVOD exhibition initiative focused on licensed cinematic content.",
   },
 
   es: {
@@ -160,7 +160,7 @@ platformText:
     navDistributors: "Distribuidores",
     navAbout: "Sobre Nosotros",
     navContact: "Contacto",
-    navSubmitTitles: "Enviar Títulos",
+    navSubmitTitles: "Licencias",
 
     // HERO
     heroTitle1: "YouTube AVOD",
@@ -174,8 +174,8 @@ platformText:
     heroParagraph2:
       "Diseñado para explotación AVOD legítima y conforme a derechos en colaboración con distribuidores y propietarios de contenido.",
 
-    exploreCatalog: "Catálogo en preparación",
-    forDistributors: "Para Distribuidores",
+    exploreCatalog: "Ver Catálogo",
+    forDistributors: "Para Licenciantes",
 
     // CONTACT
     licensingTitle: "Consultas de Licencia",
@@ -196,7 +196,7 @@ platformText:
     // HOW WE WORK
     howWeWorkTitle: "Cómo Trabajamos",
     howWeWorkSubtitle:
-      "Un enfoque estructurado y centrado en derechos para la distribución de películas en AVOD.",
+      "Un enfoque estructurado y centrado en derechos para la exhibición de películas en AVOD.",
 
     step1Title: "Revisión de Derechos",
     step1Desc:
@@ -204,7 +204,7 @@ platformText:
 
     step2Title: "Estructura de Acuerdo",
     step2Desc:
-      "Estructuración transparente del acuerdo con reparto de ingresos claro, frecuencia de reportes y términos de distribución.",
+      "Estructuración transparente del acuerdo con reparto de ingresos claro, frecuencia de reportes y términos de licencia.",
 
     step3Title: "Optimización AVOD",
     step3Desc:
@@ -232,12 +232,12 @@ licensingOutro:
     operationalTitle: "Marco Operativo",
 
     operationalP1:
-      "CineAtlas opera bajo un marco estructurado y consciente de los derechos diseñado para la distribución profesional en AVOD. Cada título se evalúa según disponibilidad territorial, alcance de licencia y idoneidad de plataforma antes de su publicación.",
+      "CineAtlas opera bajo un marco estructurado y consciente de los derechos diseñado para la exhibición profesional en AVOD. Cada título se evalúa según disponibilidad territorial, alcance de licencia y idoneidad de plataforma antes de su publicación.",
 
     operationalP2:
       "Nuestros flujos de trabajo priorizan el cumplimiento, la transparencia en reportes y la colaboración a largo plazo con distribuidores y titulares de derechos en entornos con publicidad.",
 
-      territoriesTitle: "Territorios de Distribución",
+      territoriesTitle: "Territorios de Exhibición",
 
 territoriesIntro:
 "CineAtlas se enfoca principalmente en la audiencia hispanohablante, incluyendo:",
@@ -249,7 +249,7 @@ territory2: "Mercado hispano de Estados Unidos",
 territory3: "Territorios internacionales seleccionados según disponibilidad de derechos",
 
 territoriesOutro:
-"La distribución siempre se realiza respetando las restricciones territoriales de cada acuerdo de licencia.",
+"La exhibición siempre se realiza respetando las restricciones territoriales de cada acuerdo de licencia.",
 
     // CATALOG PREVIEW
     catalogTitle: "Catálogo de Películas",
@@ -270,25 +270,25 @@ catalogSubtitle:
     aboutP3:
       "Trabajamos exclusivamente con licenciantes y distribuidores de contenido que comparten nuestro compromiso con la distribución digital legítima y consciente de los derechos. Cada flujo de trabajo está diseñado para proteger la propiedad intelectual mientras maximiza el potencial de ingresos AVOD.",
 
-      platformTitle: "Plataforma de Distribución",
+      platformTitle: "Plataforma de Exhibición",
 
 platformText:
-"La distribución se realiza a través de canales AVOD en YouTube optimizados para audiencias de cine de género. Nuestra estrategia combina optimización de metadatos, posicionamiento de contenido y análisis de rendimiento para maximizar el alcance y la monetización.",
+"La exhibición se realiza a través de canales AVOD en YouTube optimizados para audiencias de cine de género. Nuestra estrategia combina optimización de metadatos, posicionamiento de contenido y análisis de rendimiento para maximizar el alcance y la monetización.",
 
     // RIGHTS & COMPLIANCE
     rightsTitle: "Derechos y Cumplimiento",
 
     rightsP1:
-      "Todo el contenido distribuido a través de CineAtlas está sujeto a verificación de derechos y revisión territorial. Trabajamos exclusivamente bajo acuerdos de licencia definidos y no reclamamos la propiedad de contenido de terceros.",
+      "Todo el contenido exhibido a través de CineAtlas está sujeto a verificación de derechos y revisión territorial. Trabajamos exclusivamente bajo acuerdos de licencia definidos y no reclamamos la propiedad de contenido de terceros.",
 
     rightsP2:
-      "La disponibilidad de distribución puede variar según los derechos regionales y las políticas de la plataforma.",
+      "La disponibilidad de exhibición puede variar según los derechos regionales y las políticas de la plataforma.",
 
     // TRUST STRIP
     trustTitle: "Flujo AVOD y Derechos Alineado a la Industria",
     trustBadge1: "Enfoque en Derechos",
     trustBadge2: "Especializado en AVOD",
-    trustBadge3: "Distribución en YouTube",
+    trustBadge3: "Exhibición en YouTube",
     trustBadge4: "Listo para B2B",
 
     // DISTRIBUTOR STRIP
@@ -298,12 +298,12 @@ platformText:
 
     // FOOTER
     footerDesc:
-      "Distribución profesional de películas AVOD en YouTube. Contenido licenciado, monetización optimizada y flujos de trabajo conformes a derechos para territorios globales.",
+      "Exhibición profesional de películas AVOD en YouTube. Contenido licenciado, monetización optimizada y flujos de trabajo conformes a derechos para territorios globales.",
 
     footerLegal:
-      "Todos los derechos reservados. La distribución de contenido está sujeta a acuerdos de licencia territoriales y a la aprobación de los titulares de derechos. CineAtlas no reclama la propiedad del contenido distribuido.",
+      "Todos los derechos reservados. La exhibición de contenido está sujeta a acuerdos de licencia territoriales y a la aprobación de los titulares de derechos. CineAtlas no reclama la propiedad del contenido exhibido.",
 
     footerNote:
-      "CineAtlas opera como una iniciativa independiente de distribución AVOD centrada en contenido cinematográfico licenciado.",
+      "CineAtlas opera como una iniciativa independiente de exhibición AVOD centrada en contenido cinematográfico licenciado.",
   },
 };
