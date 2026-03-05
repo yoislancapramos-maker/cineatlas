@@ -26,7 +26,8 @@ export const translations = {
     // CONTACT
     licensingTitle: "Licensing Inquiries",
     companyLabel: "Company / Distributor",
-    emailLabel: "Corporate Email",
+    emailLabel: "Contact Email",
+    emailPlaceholder: "name@email.com",
     detailsLabel: "Catalog Details",
     submitInquiry: "Submit Inquiry",
 
@@ -180,7 +181,8 @@ platformText:
     // CONTACT
     licensingTitle: "Consultas de Licencia",
     companyLabel: "Nombre de la empresa",
-    emailLabel: "Email Corporativo",
+    emailLabel: "Email de contacto",
+    emailPlaceholder: "nombre@email.com",
     detailsLabel: "Describe tu catálogo, número de títulos, géneros y territorios disponibles",
     submitInquiry: "Enviar Consulta",
 

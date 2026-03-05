@@ -89,7 +89,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   className="w-full bg-input border border-border/50 rounded-sm px-4 py-2 font-body text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all"
-                  placeholder="you@company.com"
+                  placeholder={t.emailPlaceholder}
                   required
                   maxLength={255}
                 />
