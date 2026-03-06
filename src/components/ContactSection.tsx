@@ -45,6 +45,10 @@ const handleSubmit = async (e: React.FormEvent) => {
           <p className="font-body text-muted-foreground">
             {t.licensingSubtitle}
           </p>
+
+          <p className="font-body text-muted-foreground text-sm mt-3">
+  {t.licensingNote}
+</p>
         </div>
 
         <div className="glass-card rounded-sm p-2.5 md:p-3 banner-gold-rim w-full max-w-[780px] mx-auto">

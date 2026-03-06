@@ -25,6 +25,8 @@ export const translations = {
 
     // CONTACT
     licensingTitle: "Licensing Inquiries",
+    licensingNote:
+   "Licensing inquiries welcome from film distributors, sales agents, and rights holders.",
     companyLabel: "Company / Distributor",
     emailLabel: "Contact Email",
     emailPlaceholder: "name@email.com",
@@ -180,6 +182,8 @@ platformText:
 
     // CONTACT
     licensingTitle: "Consultas de Licencia",
+    licensingNote:
+    "Consultas de licencias bienvenidas de distribuidores, agentes de ventas y titulares de derechos.",
     companyLabel: "Nombre de la empresa",
     emailLabel: "Email de contacto",
     emailPlaceholder: "nombre@email.com",

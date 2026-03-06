@@ -19,6 +19,12 @@ const Footer = () => {
         <p className="font-body text-xs text-muted-foreground max-w-lg mx-auto leading-relaxed">
           {t.footerDesc}
         </p>
+        <a
+          href="/privacy"
+          className="inline-block text-[11px] text-muted-foreground/70 hover:text-primary transition-colors"
+        >
+          Privacy & Data Policy
+        </a>
         <div className="pt-4 border-t border-border/20 space-y-3">
           <p className="font-body text-[11px] text-muted-foreground/60">
             © {new Date().getFullYear()} CineAtlas. {t.footerLegal}
