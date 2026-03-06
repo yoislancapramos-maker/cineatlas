@@ -58,6 +58,11 @@ export default function PrivacyPolicy() {
 >
   {lang === "es" ? "← Volver a CineAtlas" : "← Back to CineAtlas"}
 </a>
+<p className="text-center text-xs text-muted-foreground/60 mt-6">
+  {lang === "es"
+    ? "Última actualización: Marzo 2026"
+    : "Last updated: March 2026"}
+</p>
 
           </div>
         </div>
