@@ -154,7 +154,11 @@ platformText:
 
     footerNote:
       "CineAtlas operates as an independent AVOD exhibition initiative focused on licensed cinematic content.",
+
+      privacyPolicy: "Privacy & Data Policy",
   },
+
+  
 
   es: {
 
@@ -311,5 +315,7 @@ platformText:
 
     footerNote:
       "CineAtlas opera como una iniciativa independiente de exhibición AVOD centrada en contenido cinematográfico licenciado.",
+
+      privacyPolicy: "Política de Privacidad",
   },
 };

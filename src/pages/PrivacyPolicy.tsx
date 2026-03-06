@@ -52,12 +52,14 @@ export default function PrivacyPolicy() {
   cineatlas.contacto@gmail.com
 </span>
 </p>
-            <a
-  href="/"
-  className="block text-center text-sm text-primary hover:underline mt-10"
->
-  {lang === "es" ? "← Volver a CineAtlas" : "← Back to CineAtlas"}
-</a>
+  <div className="text-center mt-8">
+  <a
+    href="/"
+    className="inline-block text-[11px] px-3 py-[2px] border border-primary/40 rounded-sm text-primary hover:border-primary/70 transition"
+  >
+    {lang === "es" ? "← Volver a CineAtlas" : "← Back to CineAtlas"}
+  </a>
+</div>
 <p className="text-center text-xs text-muted-foreground/60 mt-6">
   {lang === "es"
     ? "Última actualización: Marzo 2026"
