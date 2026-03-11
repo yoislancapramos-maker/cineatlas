@@ -15,6 +15,10 @@ const LicensingModels = () => {
           {t.licensingIntro}
         </p>
 
+        <p className="font-body text-muted-foreground leading-relaxed mb-6">
+          {t.licensingListIntro}
+        </p>
+
         <div className="space-y-3 text-sm font-body text-foreground/80">
 
           <p>• {t.licensing1}</p>

@@ -16,9 +16,9 @@ const DistributionTerritories = () => {
         </p>
 
         <div className="space-y-3 text-sm font-body text-foreground/80">
-          <p>• {t.territory1}</p>
-          <p>• {t.territory2}</p>
-          <p>• {t.territory3}</p>
+          {t.territory1 && <p>• {t.territory1}</p>}
+          {t.territory2 && <p>• {t.territory2}</p>}
+          {t.territory3 && <p>• {t.territory3}</p>}
         </div>
 
         <p className="font-body text-muted-foreground leading-relaxed mt-8">

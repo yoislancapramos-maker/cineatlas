@@ -66,13 +66,15 @@ export const translations = {
       licensingModelsTitle: "Licensing Models",
 
 licensingIntro:
-"CineAtlas works with flexible licensing structures adapted to the AVOD model:",
+"CineAtlas works with flexible licensing structures adapted to the AVOD model on digital platforms such as YouTube.",
+
+licensingListIntro: "Agreements may include:",
 
 licensing1: "Revenue Share (participation in advertising revenue)",
 
-licensing2: "Minimum Guarantee (MG) against future revenue",
+licensing2: "Minimum Guarantee (MG) when applicable depending on the title",
 
-licensing3: "Hybrid models depending on the title's potential",
+licensing3: "Hybrid models combining MG and revenue share",
 
 licensingOutro:
 "Each agreement is structured according to territory, rights availability and monetization strategy.",
@@ -89,16 +91,16 @@ licensingOutro:
       territoriesTitle: "Exhibition Territories",
 
 territoriesIntro:
-"CineAtlas focuses primarily on Spanish-speaking audiences, including:",
+"CineAtlas presents films through YouTube AVOD for international audiences interested in cinema and entertainment.",
 
-territory1: "Latin America",
+territory1: "Depending on the rights available, titles may be exhibited in different territories around the world.",
 
-territory2: "U.S. Hispanic market",
+territory2: "",
 
-territory3: "Selected international territories depending on rights availability",
+territory3: "",
 
 territoriesOutro:
-"Exhibition is always carried out respecting the territorial restrictions of each licensing agreement.",
+"All exhibition strictly respects the territorial restrictions established in each licensing agreement.",
 
     // CATALOG PREVIEW
     catalogTitle: "Film Catalog",
@@ -227,13 +229,15 @@ platformText:
       licensingModelsTitle: "Modelos de Licenciamiento",
 
 licensingIntro:
-"CineAtlas trabaja con estructuras de licenciamiento flexibles adaptadas al modelo AVOD:",
+"CineAtlas trabaja con estructuras de licenciamiento flexibles adaptadas al modelo AVOD en plataformas digitales como YouTube.",
 
-licensing1: "Revenue Share (participación en ingresos)",
+licensingListIntro: "Los acuerdos pueden incluir:",
 
-licensing2: "Minimum Guarantee (MG) contra ingresos futuros",
+licensing1: "Revenue Share (participación en ingresos publicitarios)",
 
-licensing3: "Modelos híbridos según el potencial del título",
+licensing2: "Minimum Guarantee (MG) cuando aplica según el título",
+
+licensing3: "Modelos híbridos combinando MG y revenue share",
 
 licensingOutro:
 "Cada acuerdo se estructura según territorio, disponibilidad de derechos y estrategia de monetización.",
@@ -250,16 +254,16 @@ licensingOutro:
       territoriesTitle: "Territorios de Exhibición",
 
 territoriesIntro:
-"CineAtlas se enfoca principalmente en la audiencia hispanohablante, incluyendo:",
+"CineAtlas presenta películas a través de YouTube AVOD para audiencias internacionales interesadas en cine y entretenimiento.",
 
-territory1: "América Latina",
+territory1: "Dependiendo de los derechos disponibles, los títulos pueden exhibirse en distintos territorios del mundo.",
 
-territory2: "Mercado hispano de Estados Unidos",
+territory2: "",
 
-territory3: "Territorios internacionales seleccionados según disponibilidad de derechos",
+territory3: "",
 
 territoriesOutro:
-"La exhibición siempre se realiza respetando las restricciones territoriales de cada acuerdo de licencia.",
+"La exhibición siempre se realiza respetando las restricciones territoriales establecidas en cada acuerdo de licencia.",
 
     // CATALOG PREVIEW
     catalogTitle: "Catálogo de Películas",
