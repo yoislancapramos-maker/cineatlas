@@ -1,0 +1,116 @@
+import { useLanguage } from "@/context/LanguageContext";
+
+const HeroSection = () => {
+  const { t } = useLanguage();
+  return (
+    <section className="relative overflow-hidden w-full bg-background pt-20 pb-10 min-h-[78vh]flex items-start md:items-center">
+      
+      {/* CONTENT */}
+      <div className="relative z-20 container mx-auto px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+
+          {/* ===== TITLES ===== */}
+<h1
+  className="font-display font-bold leading-[0.95] mb-3 opacity-0 animate-fade-in-up"
+  style={{
+    textShadow:
+      "0 0 30px hsl(43, 72%, 55%, 0.2), 0 0 60px hsl(43, 72%, 55%, 0.08)",
+  }}
+>
+  {/* Desktop: una línea */}
+  <span className="hidden md:block text-3xl lg:text-[2.6rem] xl:text-[3.1rem] whitespace-nowrap">
+    <span className="text-gold-gradient gold-text-glow">
+      {t.heroTitle1}
+    </span>{" "}
+    <span className="text-foreground">
+      {t.heroTitle2}
+    </span>
+  </span>
+
+  {/* Mobile: formato vertical */}
+  <span className="md:hidden block text-3xl sm:text-4xl">
+    <span className="text-gold-gradient gold-text-glow block">
+      {t.heroTitle1}
+    </span>
+    <span className="text-foreground block mt-1">
+      {t.heroTitleMobile2}
+    </span>
+  </span>
+
+  {/* Sub */}
+  <span className="block mt-3 text-foreground/80 text-xl sm:text-2xl md:text-3xl font-medium">
+    {t.heroInfra}
+  </span>
+</h1>
+
+          {/* ===== PARAGRAPHS ===== */}
+          <p
+            className="font-body text-muted-foreground text-sm sm:text-base max-w-2xl mx-auto mb-3 leading-relaxed opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "0.3s" }}
+          >
+            {t.heroParagraph1}
+          </p>
+
+          <p
+            className="font-body text-foreground/75 text-xs sm:text-sm max-w-xl mx-auto mb-8 tracking-wide opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "0.45s" }}
+          >
+            {t.heroParagraph2}
+          </p>
+
+          {/* ===== BANNER STRIP (NUEVO) ===== */}
+          
+<div
+  className="relative mx-auto mb-6 overflow-hidden rounded-sm opacity-0 animate-fade-in-up banner-gold-rim"
+  style={{
+    animationDelay: "0.55s",
+    maxWidth: "1100px",
+    aspectRatio: "1100 / 260",
+  }}
+>
+            <img
+              src="/banner.png"
+              alt=""
+              className="h-full w-full object-contain md:object-cover object-center"
+            />
+
+            {/* overlays suaves */}
+            <div className="absolute inset-0 bg-background/0" />
+            
+
+            {/* glow dorado suave */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "radial-gradient(ellipse at center, hsl(43, 72%, 55%, 0.12) 0%, transparent 65%)",
+              }}
+            />
+          </div>
+
+          {/* ===== BUTTONS ===== */}
+          <div
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "0.7s" }}
+          >
+            <a
+              href="#catalog"
+              className="metallic-shine inline-flex items-center gap-2 rounded-sm bg-primary px-8 py-2.5 font-body text-sm font-semibold tracking-wider uppercase text-primary-foreground transition-all duration-300 hover:brightness-110 gold-glow-strong shine-sweep"
+            >
+              {t.exploreCatalog}
+            </a>
+
+            <a
+              href="#how-we-work"
+              className="inline-flex items-center gap-2 rounded-sm border border-primary/40 px-8 py-2.5 font-body text-sm font-medium tracking-wider uppercase text-primary transition-all duration-300 hover:bg-primary/10 hover:border-primary/60"
+            >
+              {t.forDistributors}
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
