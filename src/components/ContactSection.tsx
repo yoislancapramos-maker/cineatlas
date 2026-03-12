@@ -12,15 +12,16 @@ const handleSubmit = async (e: React.FormEvent) => {
   if (!form.company.trim() || !form.email.trim() || !form.details.trim()) return;
 
   try {
-    const res = await fetch("https://formspree.io/f/xreawjnd", {
+    const res = await fetch("/api/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
       body: JSON.stringify({
-  ...form,
-  _replyto: form.email,
+  name: form.company,
+  email: form.email,
+  message: form.details,
 }),
     });
 
@@ -130,10 +131,10 @@ const handleSubmit = async (e: React.FormEvent) => {
 </p>
 
   <a
-    href="mailto:cineatlas.contacto@gmail.com"
+    href="mailto:licensing@cineatlasfilms.com"
     className="shine-sweep inline-flex items-center justify-center rounded-sm border border-primary/40 px-8 py-2 font-body text-xs font-semibold tracking-wider uppercase text-primary transition-all duration-300 hover:bg-primary/10 hover:border-primary/60"
   >
-    cineatlas.contacto@gmail.com
+    licensing@cineatlasfilms.com
   </a>
 </div>
             </form>
