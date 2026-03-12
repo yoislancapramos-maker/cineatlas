@@ -31,7 +31,7 @@ export default async function handler(
       from: `"CineAtlas Website" <licensing@cineatlasfilms.com>`,
       to: "licensing@cineatlasfilms.com",
       replyTo: email,
-      subject: "New inquiry from CineAtlas website",
+      subject: "CineAtlas Website Inquiry",
       text: `
 Name: ${name}
 Email: ${email}

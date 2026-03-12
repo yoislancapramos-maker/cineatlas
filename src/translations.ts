@@ -35,7 +35,7 @@ export const translations = {
 
     inquiryReceived: "Inquiry Received",
     inquiryThanks:
-      "Thank you for your interest. Our licensing team will review your submission and respond within 2–3 business days.",
+      "Thank you for contacting CineAtlas. We will review your message and respond as soon as possible.",
 
     // CONTACT extras
     complianceNote:
@@ -198,7 +198,7 @@ platformText:
 
     inquiryReceived: "Consulta Recibida",
     inquiryThanks:
-      "Gracias por su interés. Nuestro equipo de licencias revisará su envío y responderá en 2–3 días hábiles.",
+      "Gracias por contactar con CineAtlas. Revisaremos su mensaje y responderemos lo antes posible.",
 
     // CONTACT extras
     complianceNote:
