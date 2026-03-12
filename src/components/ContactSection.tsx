@@ -130,12 +130,15 @@ const handleSubmit = async (e: React.FormEvent) => {
   {t.directContact}
 </p>
 
-  <a
-    href="mailto:licensing@cineatlasfilms.com"
-    className="shine-sweep inline-flex items-center justify-center rounded-sm border border-primary/40 px-8 py-2 font-body text-xs font-semibold tracking-wider uppercase text-primary transition-all duration-300 hover:bg-primary/10 hover:border-primary/60"
-  >
+<a
+  href="mailto:licensing@cineatlasfilms.com"
+  translate="no"
+  className="shine-sweep inline-flex items-center justify-center rounded-sm border border-primary/40 px-8 py-2 font-body text-xs font-semibold tracking-wider uppercase text-primary transition-all duration-300 hover:bg-primary/10 hover:border-primary/60"
+>
+  <span translate="no">
     licensing@cineatlasfilms.com
-  </a>
+  </span>
+</a>
 </div>
             </form>
           )}
