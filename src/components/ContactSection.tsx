@@ -18,10 +18,11 @@ const handleSubmit = async (e: React.FormEvent) => {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      body: JSON.stringify({
+body: JSON.stringify({
   name: form.company,
   email: form.email,
   message: form.details,
+  website: (e.target as HTMLFormElement).website?.value
 }),
     });
 
@@ -103,21 +104,30 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <label className="block font-body text-xs tracking-widest uppercase text-muted-foreground mb-2">
                   {t.detailsLabel}
                 </label>
-                <textarea
-                  name="details"
-                  value={form.details}
-                  onChange={(e) => setForm({ ...form, details: e.target.value })}
-                  rows={3}
-                  className="w-full bg-input border border-border/50 rounded-sm px-4 py-2 font-body text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all resize-none"
-                  placeholder={t.detailsLabel}
-                  required
-                  maxLength={1000}
-                />
-              </div>
-              <button
-                type="submit"
-                className="metallic-shine w-full rounded-sm bg-primary px-6 py-2.5 font-body text-sm font-semibold tracking-wider uppercase text-primary-foreground transition-all duration-300 hover:brightness-110 gold-glow-strong"
-              >
+<textarea
+  name="details"
+  value={form.details}
+  onChange={(e) => setForm({ ...form, details: e.target.value })}
+  rows={3}
+  className="w-full bg-input border border-border/50 rounded-sm px-4 py-2 font-body text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all resize-none"
+  placeholder={t.detailsLabel}
+  required
+  maxLength={1000}
+/>
+</div>
+
+<input
+  type="text"
+  name="website"
+  style={{ display: "none" }}
+  tabIndex={-1}
+  autoComplete="off"
+/>
+
+<button
+  type="submit"
+  className="metallic-shine w-full rounded-sm bg-primary px-6 py-2.5 font-body text-sm font-semibold tracking-wider uppercase text-primary-foreground transition-all duration-300 hover:brightness-110 gold-glow-strong"
+>
                 {t.submitInquiry}
               </button>
 <p className="font-body text-[11px] text-muted-foreground/50 text-center mt-4">
